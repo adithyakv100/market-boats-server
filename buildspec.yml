@@ -17,10 +17,12 @@ phases:
   post_build:
     commands:
       # Remove existing node_modules to clear dev dependencies
-      - rm -r node_modules
+      #- rm -r node_modules
+      # Uncomment the above if required
 
       # Install runtime dependencies
-      - npm install --production
+      #- npm install --production
+      # Uncomment the above if required
 
       # Do not remove this statement. This command is required for AWS CodeStar projects.
       # Update the AWS Partition, AWS Region, account ID and project ID in the project ARN in template-configuration.json file so AWS CloudFormation can tag project resources.
